@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+
+	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container mt-3 bg-info">
+
+		<!--<div class="container d-flex">
+			<input type="textarea" name="calculos" class="form-control">
+				
+		</div>
+
+		<div class="container d-flex my-3 justify-content-around">
+			<ul class="nav-item dropdown btn-lg btn-secondary">
+				<a class="nav-link dropdown-toggle bg-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modo Avanzado</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#">Conversión Moneda</a>
+			      <a class="dropdown-item" href="#">Conversion Bin y Hex</a>
+			    </div>
+			 </ul>
+			 <button type="button" class="btn btn-secondary btn-lg">CE</button>
+		</div>
+
+		<div class="container d-flex flex-column">
+
+			<div class="container d-flex justify-content-around my-3">
+				<button type="button" class="btn btn-lg btn-secondary">1</button>
+				<button type="button" class="btn btn-lg btn-secondary">3</button>
+				<button type="button" class="btn btn-lg btn-secondary">3</button>
+				<button type="button" class="btn btn-lg btn-secondary">+</button>
+				<button type="button" class="btn btn-lg btn-secondary">-</button>
+			</div>
+
+			<div class="container d-flex justify-content-around my-3">
+				<button type="button" class="btn btn-lg btn-secondary">4</button>
+				<button type="button" class="btn btn-lg btn-secondary">5</button>
+				<button type="button" class="btn btn-lg btn-secondary">6</button>
+				<button type="button" class="btn btn-lg btn-secondary">*</button>
+				<button type="button" class="btn btn-lg btn-secondary">/</button>
+			</div>
+
+			<div class="container d-flex justify-content-around my-3">
+				<button type="button" class="btn btn-lg btn-secondary">7</button>
+				<button type="button" class="btn btn-lg btn-secondary">8</button>
+				<button type="button" class="btn btn-lg btn-secondary">9</button>
+				<button type="button" class="btn btn-lg btn-secondary">Bn</button>
+				<button type="button" class="btn btn-lg btn-secondary">Hx</button>
+			</div>
+
+			<div class="container d-flex justify-content-around my-3">
+				<button type="button" class="btn btn-lg btn-secondary">€</button>
+				<button type="button" class="btn btn-lg btn-secondary">0</button>
+				<button type="button" class="btn btn-lg btn-secondary"><-</button>
+				<button type="button" class="btn btn-lg btn-secondary">€uro</button>
+				<button type="button" class="btn btn-lg btn-secondary">Dólar</button>
+			</div>
+
+			<div class="container d-flex justify-content-around my-3">
+				<button type="button" class="btn btn-lg btn-secondary">£ibra</button>
+				<button type="button" class="btn btn-lg btn-secondary">Peso</button>
+				<button type="button" class="btn btn-lg btn-secondary">¥en</button>
+			</div>
+		</div> -->
+
+
+		
+
+<table class="table">
+  <tbody>
+	<tr>
+		<td class="col-10">
+			<div class="container d-flex">
+				<input type="textarea" name="calculos" class="form-control">	
+			</div>
+	</td>
+	</tr>
+  	<tr class="d-flex">
+    	<td class="col-6">
+    		<ul class="nav-item dropdown btn-lg btn-secondary">
+				<a class="nav-link dropdown-toggle bg-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modo Avanzado</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#">Conversión Moneda</a>
+			      <a class="dropdown-item" href="#">Conversion Bin y Hex</a>
+			    </div>
+			</ul>
+		</td>
+		<td class="col-6"><button type="button" class="btn btn-secondary btn-lg">CE</button></td>
+    </tr>
+    <tr class="d-flex">
+	    <td class="col-3"><button type="button" class="btn btn-lg btn-secondary">1</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">3</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">3</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">+</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">-</button></td>
+    </tr>
+    <tr class="d-flex">
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">4</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">5</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">6</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">*</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">/</button></td>
+    </tr>
+    <tr class="d-flex">
+    	<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">7</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">8</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">9</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">Bn</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">Hx</button></td>
+    </tr>
+    <tr class="d-flex">
+    	<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">€uro</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">0</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary"><-</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">Dolar</button></td>
+		<td class="col-3"><button type="button" class="btn btn-lg btn-secondary">Libra</button></td>
+    </tr>
+    
+  </tbody>
+</table>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB3joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>
