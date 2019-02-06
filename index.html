@@ -7,9 +7,18 @@
 	<!-- CSS Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+	<!-- JavaScript -->
+	<script type="text/javascript" src="main.js"></script>
+
+
 	<style type="text/css">
 		body {text-align: center;}
 		.global{background-color: #a7ebe3;}
+		button {width: 100%}
+		.text {
+			width: 50%;
+			height: 3em;
+		}
 	</style>
 
 </head>
@@ -19,7 +28,7 @@
 		<div class="row py-4">
 			
 			<div class="col-12">
-				<input type="textarea" name="result">
+				<input class="text" type="textarea" value="0" name="result" readonly="true">
 			    </div>	
 		</div>
 
@@ -35,12 +44,13 @@
 			    <div class="dropdown-menu">
 			      <a class="dropdown-item" href="#">Conversión Moneda</a>
 			      <a class="dropdown-item" href="#">Conversion Bin y Hex</a>
+			      <a class="dropdown-item" href="#">Modo Básico</a>
 			    </div>
 			 </ul>
 			</div>
 			
 			<div class="col-5">
-				<button type="button" class="btn btn-secondary btn-lg">CE</button>
+				<button  type="button" class="btn btn-secondary btn-lg" name="borrar">CE</button>
 			</div>
 			
 		</div>
@@ -48,73 +58,73 @@
 
 		<div class="row mt-3">
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">1</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="1">1</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">2</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="2">2</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">3</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="3">3</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">+</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="suma">+</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">-</button>
-			</div>
-		</div>
-
-		<div class="row mt-3">
-			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">4</button>
-			</div>
-			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">5</button>
-			</div>
-			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">6</button>
-			</div>
-			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">*</button>
-			</div>
-			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">/</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="resta">-</button>
 			</div>
 		</div>
 
 		<div class="row mt-3">
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">7</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="4">4</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">8</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="5">5</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">9</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="6">6</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">Bin</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="multiplica">*</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">Hex</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="divide">/</button>
 			</div>
 		</div>
 
 		<div class="row mt-3">
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">Euros €</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="7">7</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">0</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="8">8</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary"><</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="9">9</button>
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">Dólar $</button>
+				<input style="width: 100%; height: 100%" readonly="true" type="text" name="binario" placeholder="Binario">
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">Libra £</button>
+				<input style="width: 100%; height: 100%" readonly="true" type="text" name="hexadecimal" placeholder="Hexadecimal">
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<div class="col">
+				<button type="button" class="btn btn-lg btn-secondary" name="coma">,</button>
+			</div>
+			<div class="col">
+				<button type="button" class="btn btn-lg btn-secondary" name="0">0</button>
+			</div>
+			<div class="col">
+				<button type="button" class="btn btn-lg btn-secondary" name="retroceso"><</button>
+			</div>
+			<div class="col">
+				<input style="width: 100%; height: 100%" readonly="true" type="text" name="dolar" placeholder="Dólar ($)">
+			</div>
+			<div class="col">
+				<input style="width: 100%; height: 100%" readonly="true" type="text" name="libra" placeholder="Libra (£)">
 			</div>
 		</div>
 
@@ -123,15 +133,16 @@
 				
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">Peso $</button>
+				<button type="button" class="btn btn-lg btn-secondary" name="igual">=</button>
+			</div>
+			<div class="col"">
+				<input style="width: 100%; height: 100%" readonly="true" type="text" name="euros" placeholder="Euros (€) ">
 			</div>
 			<div class="col">
-				
+				<input style="width: 100%; height: 100%" readonly="true" type="text" name="yen" placeholder="Yen (¥)">
 			</div>
 			<div class="col">
-				<button type="button" class="btn btn-lg btn-secondary">Yen ¥</button>
-			</div>
-			<div class="col">
+				<input style="width: 100%; height: 100%" readonly="true" type="text" name="peso" placeholder="Peso ($)">
 			</div>	
 		</div>
 	</div>
